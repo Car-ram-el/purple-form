@@ -12,7 +12,7 @@ const Six = () => {
 
   const handleSubmit = async() => {
     try {
-      // const res = await axios.post('http://localhost:5000/form',userData);
+      const res = await axios.post('http://localhost:5000/form',userData);
       console.log('Form submitted',res);
     } catch (err) {
       console.log('Error before submitting',err);
