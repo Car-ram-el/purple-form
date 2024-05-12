@@ -8,6 +8,7 @@ import calendar from "../assets/calendar.svg";
 import FieldCol2 from "./Parts/FieldCol2";
 import FieldCol1 from "./Parts/FieldCol1";
 import { updateFormData } from "../actions";
+import arrow from '../assets/chevron-down.svg'
 
 const One = () => {
 
@@ -157,18 +158,24 @@ const One = () => {
                           <label htmlFor="district" className="text-zinc-700 text-base font-semibold font-['Inter'] leading-tight">
                             District
                           </label>
-                          <div className="w-[187px] flex-col justify-start items-start flex">
-                            <div className="h-11 px-4 py-2.5 bg-white rounded-lg shadow border border-gray-900 justify-center items-center gap-2 inline-flex">
-                              <select className="text-slate-700 text-sm font-medium font-['Inter'] leading-tight focus:outline-none bg-white ">
-                                <option defaultValue={"District 0"}>Select your district</option>
-                                <option value={"District 1"}>1</option>
-                                <option value={"District 2"}>2</option>
-                                <option value={"District 3"}>3</option>
-                                <option value={"District 4"}>4</option>
-                                <option value={"District 5"}>5</option>
-                              </select>
-                            </div>
-                          </div>
+
+<div className="self-stretch  bg-white hover:bg-violet-50 rounded-lg shadow border border-gray-900 justify-start items-center gap-2 inline-flex">
+                                <div className="group w-full">
+                                  <button type="button" className="inline-flex px-3.5 py-2.5 text-gray-400 justify-between items-center w-full text-md font-medium  focus:outline-none focus:bg-violet-200">
+                                    <p>District</p>
+                                    <img src={arrow} alt="arrow" className="w-5 h-5 relative" />
+                                  </button>
+                                  <div className="absolute left-[1120px] z-10 text-center w-40 mt-1 bg-white divide-y divide-gray-100 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300">
+                                    <div className="py-1">
+                                      <p className=" m-2">Option 1</p>
+                                      <p className=" m-2">Option 2</p>
+                                      <p className=" m-2">Option 3</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+
                         </div>
                       </div>
                     </div>
@@ -181,18 +188,21 @@ const One = () => {
                           >
                             State
                           </label>
-                          <div className="w-[174px] flex-col justify-start items-start flex">
-                            <div className="h-11 px-4 py-2.5 bg-white rounded-lg shadow border border-gray-900 justify-center items-center gap-2 inline-flex">
-                              <select className="text-slate-700 text-sm font-medium font-['Inter'] leading-tight focus:outline-none bg-white">
-                                <option defaultValue={"State 0"}>Select your state</option>
-                                <option value={"State 1"}>1</option>
-                                <option value={"State 2"}>2</option>
-                                <option value={"State 3"}>3</option>
-                                <option value={"State 4"}>4</option>
-                                <option value={"State 5"}>5</option>
-                              </select>
-                            </div>
-                          </div>
+                          <div className="self-stretch  bg-white hover:bg-violet-50 rounded-lg shadow border border-gray-900 justify-start items-center gap-2 inline-flex">
+                                <div className="group w-full">
+                                  <button type="button" className="inline-flex px-3.5 py-2.5 text-gray-400 justify-between items-center w-full text-md font-medium  focus:outline-none focus:bg-violet-200">
+                                    <p>State.</p>
+                                    <img src={arrow} alt="arrow" className="w-5 h-5 relative" />
+                                  </button>
+                                  <div className="absolute left-[1280px] z-10 text-center w-40 mt-1 bg-white divide-y divide-gray-100 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300">
+                                    <div className="py-1">
+                                      <p className=" m-2">Option 1</p>
+                                      <p className=" m-2">Option 2</p>
+                                      <p className=" m-2">Option 3</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                         </div>
                       </div>
                     </div>

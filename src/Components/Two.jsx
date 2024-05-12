@@ -42,17 +42,21 @@ const Two = () => {
                           <label className="text-zinc-700 text-base font-semibold font-['Inter'] leading-tight">
                             Campus Size
                           </label>
-                          <div className="w-[205px] flex-col justify-start items-start flex">
-                            <div className="h-11 px-4 py-2.5 bg-white rounded-lg shadow border border-gray-900 justify-center items-center gap-2 inline-flex">
-                              <select className="text-zinc-700 text-sm font-semibold font-['Inter'] leading-tight focus:outline-none bg-white">
-                                <option defaultValue={"60"}> Spread over 60 acres</option>
-                                <option value={"120"}> Spread over 120 acres</option>
-                                <option value={"180"}> Spread over 180 acres</option>
-                                <option value={"240"}> Spread over 240 acres</option>
-                                <option value={"3000"}> Spread over 3000 acres</option>
-                              </select>
-                            </div>
-                          </div>
+                          <div className="self-stretch  bg-white hover:bg-violet-50 rounded-lg shadow border border-gray-900 justify-start items-center gap-2 inline-flex">
+                                <div className="group w-full">
+                                  <button type="button" className="inline-flex px-3.5 py-2.5 text-gray-400 justify-between items-center w-full text-md font-medium  focus:outline-none focus:bg-violet-200">
+                                    <p>Spread over 60 acres</p>
+                                    <img src={arrow} alt="arrow" className="w-5 h-5 relative" />
+                                  </button>
+                                  <div className="absolute left-[100px] z-10 text-center w-40 mt-1 bg-white divide-y divide-gray-100 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300">
+                                    <div className="py-1">
+                                      <p className=" m-2">Option 1</p>
+                                      <p className=" m-2">Option 2</p>
+                                      <p className=" m-2">Option 3</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                         </div>
                       </div>
                     </div>

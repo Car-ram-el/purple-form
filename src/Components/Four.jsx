@@ -59,12 +59,20 @@ const Four = () => {
                               <label htmlFor="topRecruiters" className="text-zinc-700 text-base font-semibold font-['Inter'] leading-tight">
                                 Top Recruiters
                               </label>
-                              <div className="self-stretch px-3.5 py-2.5 bg-white rounded-lg shadow border border-gray-900 justify-start items-center gap-2 inline-flex">
-                                <div className="grow shrink basis-0 h-6 justify-start items-center gap-2 flex">
-                                  <input id="topRecruiters" type="text" placeholder="Amazon" className="text-zinc-700 text-base font-normal font-['Inter'] leading-normal focus:outline-none"
-                                  value={userData.rec} onChange={handleData} name="rec"/>
+                              <div className="self-stretch  bg-white hover:bg-violet-50 rounded-lg shadow border border-gray-900 justify-start items-center gap-2 inline-flex">
+                                <div className="group w-full">
+                                  <button type="button" className="inline-flex px-3.5 py-2.5 text-gray-400 justify-between items-center w-full text-md font-medium  focus:outline-none focus:bg-violet-200">
+                                    <p>Amazon</p>
+                                    <img src={arrow} alt="arrow" className="w-5 h-5 relative" />
+                                  </button>
+                                  <div className="absolute left-[110px] z-10 text-center w-40 mt-1 bg-white divide-y divide-gray-100 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300">
+                                    <div className="py-1">
+                                      <p className=" m-2">Option 1</p>
+                                      <p className=" m-2">Option 2</p>
+                                      <p className=" m-2">Option 3</p>
+                                    </div>
+                                  </div>
                                 </div>
-                                <img src={arrow} alt="arrow" className="w-5 h-5 relative" />
                               </div>
                             </div>
                           </div>
