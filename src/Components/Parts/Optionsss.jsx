@@ -3,7 +3,7 @@ import React from "react";
 const Optionsss = ({foo}) => {
   return (
     <div className="h-5 justify-start items-start flex">
-      <div className="w-[344px] h-5 justify-start items-start gap-2 flex">
+      <div className="w-[280px] h-5 justify-start items-start gap-2 flex">
         <div className="pt-0.5 justify-center items-center flex">
       <input type="checkbox" className="w-4 h-4 relative bg-white rounded border border-black"/>
         </div>
